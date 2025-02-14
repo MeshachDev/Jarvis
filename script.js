@@ -7,7 +7,7 @@ let hur = dt.getUTCHours() + 5;
 
 if (min > 60) {
   hur += 1;
-  min = dt.getUTCMinutes() - 30 ;
+  min = dt.getUTCMinutes() - 30;
 }
 tm.innerHTML = `${hur} : ${min} `;
 
@@ -53,9 +53,29 @@ const chat_window = document.querySelector(".chat-window");
 
 default_chat_window.style.display = "none";
 
+var chat_click = document.getElementsByClassName("contacts-list");
+const chat_input = document.getElementById("chat_input")
+const send_msg_btn = document.getElementById("bottom-bar-send-btn");
+const display_chats = document.getElementById("dc")
 
-console.log(dp)
-document.addEventListener(onmouseover , function(){
-  // dp.style.color = "white"
-  console.log("Mouse on evetn")
-})
+console.log(display_chats)
+
+const clicked = () => {
+  if (chat_input.value === "") {
+    chat_input.placeholder = "Enter a Message!"
+
+  }
+  else {
+    console.log(chat_input.value)
+    const snd_msg_box = document.createElement("div");
+    snd_msg_box.className = "snd_msg_box";
+    const snd_msg = document.createElement("p");
+    snd_msg.className = "snd_msg";
+
+    snd_msg.textContent = chat_input.value;
+    snd_msg_box.appendChild(snd_msg)
+    display_chats.appendChild(snd_msg_box);
+    chat_input.value = "";
+  }
+}
+send_msg_btn.addEventListener("click", clicked)
