@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jarvis</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header-title">Jarvis</h1>
+      <div class="right">
+        <h1 class="header-title" id="time"></h1>
+        <h1 class="header-add-btn">+</h1>
+      </div>
+    </header>
+    <div class="index-main">
+      <div class="contacts"></div>
+      <div class="chat-view">
+        <div class="on_none_clicked">
+          <p>Click on Contact to Start Chatting!</p>
+        </div>
+
+        <div class="chat-window">
+          <div class="profile">Profile Here</div>
+
+          <div class="display-chats">
+
+            <div class="res_msg_box">
+              <p class="res_msg">Hey!</p>
+            </div>
+
+            <div class="snd_msg_box">
+              <p class="snd_msg">Hey!!</p>
+            </div>
+            
+              
+          </div>
+          <div class="bottom-bar">
+            <button class="btns" id="bottom-bar-add-btn">+</button>
+            <input
+              type="text"
+              placeholder="Type a Message!"
+              name="chat_input"
+              id="chat_input"
+            />
+            <button class="btns" type="submit" id="bottom-bar-send-btn">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

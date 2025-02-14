@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: poppins;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(127, 255, 212, 0.3);
+  justify-content: flex-start;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(0, 175, 190), rgb(0, 155, 107));
+  padding: 0px 5vw;
+  box-sizing: border-box;
+}
+
+.header-title {
+  color: aqua;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  background-color: rgb(0, 175, 117);
+  border-radius: 10px;
+}
+
+.header-add-btn {
+  color: aquamarine;
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  background-color: rgb(0, 175, 150);
+  border-radius: 10px;
+}
+
+.right {
+  height: inherit;
+  min-width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.index-main {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1vh 2vw;
+  box-sizing: border-box;
+}
+
+.contacts {
+  height: 90%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: rgba(0, 255, 170, 0.4);
+  border-radius: 30px;
+  padding: 3vh 0px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.chat-view {
+  height: 90%;
+  width: 68%;
+  display: flex;
+  font-size: 2vw;
+  font-weight: 100;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(127, 255, 212, 0.5);
+  border-radius: 30px;
+}
+
+.contacts-list {
+  color: black;
+  height: auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1vw;
+  background-color: rgba(32, 172, 74, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.dp {
+  height: 6vh;
+  width: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 255, 128);
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.contact-name {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.contact-message {
+  font-size: 1vw;
+  font-weight: 100;
+
+}
+
+.contacts-list:hover {
+  background-color: rgb(0, 175, 190);
+}
+
+
+
+.chat-window {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1vw;
+  box-sizing: border-box;
+  gap: 5vh;
+}
+
+.display-chats {
+  height: 90%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2vh;
+
+}
+
+.display-chats::-webkit-scrollbar {
+  display: none;
+}
+
+.res_msg_box {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+}
+
+.snd_msg_box {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.res_msg,
+.snd_msg {
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: 3px;
+  max-width: 50%;
+  width: max-content;
+  padding: 0.5vw;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 1vw;
+}
+
+.snd_msg {
+  color: rgb(199, 255, 227);
+  background-color: rgba(32, 172, 74, 0.479);
+}
+
+.res_msg {
+  color: rgb(180, 255, 217);
+  background-color: rgb(0, 175, 150) !important;
+}
+
+.bottom-bar {
+  min-height: 10%;
+  width: 100%;
+  padding: 0px 1vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: relative;
+  bottom: 0px;
+}
+
+#bottom-bar-add-btn,
+#bottom-bar-send-btn {
+  color: aquamarine;
+  padding: 0.5vh 0.8vw;
+  box-sizing: border-box;
+  background-color: rgb(0, 175, 150);
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5vw;
+  transition: 0.3s;
+}
+
+.btns:hover {
+  scale: 1.1;
+  font-size: 2vw;
+  font-weight: 900;
+  color: rgb(0, 255, 128) !important;
+}
+
+#chat_input {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 900;
+  width: 90%;
+  height: 80%;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 1vw;
+  font-size: 1vw;
+  box-sizing: border-box;
+  background-color: rgba(32, 172, 74, 0.479);
+}
