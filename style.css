@@ -235,6 +235,7 @@ header {
   border: none;
   font-size: 1.5vw;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btns:hover {
